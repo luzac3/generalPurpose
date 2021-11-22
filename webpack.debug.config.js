@@ -5,10 +5,10 @@ const webpack = require('webpack');
 let entries = {};
 glob
     .sync("./common/ts/**/*.ts", {
-        ignore: "./common/ts/**/*.d.ts"
+        ignore: ["./common/ts/**/*.d.ts","./common/ts/modules/**/*"]
     }).
     map(function (file) {
-        const key = file.replace("./ts/", "").replace(/\.ts$/, "");
+        const key = file.replace("./common/ts/", "").replace(/\.ts$/, "");
         entries[key] = file;
     });
 
