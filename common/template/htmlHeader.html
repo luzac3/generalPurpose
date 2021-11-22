@@ -7,16 +7,4 @@
   <script src="/generalPurpose/common/js/callStored.js"></script>
   <script src="/generalPurpose/common/js/storager.js"></script>
   <script src="/generalPurpose/common/js/searchCookie.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      // 自分のURLを取得
-      let path = window.location.pathname.split('/');
-      path = path.slice(-1)[0];
-      path = path.split('.')[0];
-
-      $("." + path).attr("tabindex","-1");
-      $("." + path).attr("aria-disabled","true");
-      $("." + path).removeClass('active');
-      $("." + path).addClass('disabled');
-    });
-  </script>
+  <script src="/generalPurpose/common/js/hederMenuChangeDisabled.js"></script>
