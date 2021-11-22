@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet" href="/generalPurpose/teaParty/css/index.css" type="text/css" media="screen">
+<?php
+    readfile($_SERVER['DOCUMENT_ROOT']."/generalPurpose/common/template/htmlHeader.html");
+?>
+<script src="/generalPurpose/teaParty/js/index.js"></script>
+<title>お茶会　イベント情報</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title" class="d-flex align-items-center justify-content-center">お茶会　イベント情報</h1>
+    <div class="main">
+<?php
+    readfile($_SERVER['DOCUMENT_ROOT']."/generalPurpose/teaParty/template/header.html");
+?>
+      <div>
+        <h2 class="subTitle">紅茶について</h2>
+        <p>当日は紅茶の世界三大産地から4種類の紅茶と、ハーブティー：「喉に良いお茶」をご提供いたします。</p>
+        <p>ご提供する紅茶がお口に合わなかった場合、代わりのものをご用意いたしますので、遠慮なくお申し出ください。<br>
+          （好みが分かれる紅茶も、ご提供させていただく予定です）</p>
+        <p>基本はストレートでご提供いたしますが、砂糖やミルクの用意もございます。</p>
+        <p>当イベントは「お茶会」と銘打たれておりますが、ドレスコード等はございません。普段着でお越しいただいて問題ございません。</p>
+      </div>
+      <div>
+        <h2 class="subTitle">洋菓子について</h2>
+        <p>当日は季節のパイ、ケーキ、スコーンなどをご賞味いただきます。</p>
+        <p>紅茶に合わせて、順次ご提供させていただきますので、楽しみにお待ちくださいませ。</p>
+        <p>当イベントの洋菓子は、提供数がやや控えめとなっております。予めご了承ください。<br>
+          ただし、常時提供のものもご用意させていただく予定でございます。</p>
+      </div>
+    </div>
+  </div>
+
+<?php
+    readfile($_SERVER['DOCUMENT_ROOT']."/generalPurpose/common/template/htmlFooter.html");
+?>
+</html>
