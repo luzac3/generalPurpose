@@ -11,3 +11,8 @@ th{
 p{
   text-align: left;
 }
+.hashTag{
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
