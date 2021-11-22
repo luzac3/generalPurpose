@@ -8,7 +8,7 @@ glob
         ignore: "./common/ts/**/*.d.ts"
     }).
     map(function (file) {
-        const key = file.replace("./ts/", "").replace(/\.ts$/, "");
+        const key = file.replace("./common/ts/", "").replace(/\.ts$/, "");
         entries[key] = file;
     });
 
